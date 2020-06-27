@@ -9,7 +9,7 @@ import (
 func main() {
 	router := gin.Default()
 
-	router.GET("/media/:file", controllers.FindMedia)
+	router.GET("/media/:file", controllers.GetMediaFile)
 
 	router.Run("0.0.0.0:9000")
 }
